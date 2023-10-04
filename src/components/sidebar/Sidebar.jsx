@@ -12,7 +12,9 @@ import {
 } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
-
+import {
+ Link
+} from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -54,6 +56,7 @@ export default function Sidebar() {
             <School className="sidebarIcon" />
             <span className="sidebarListItemText">Courses</span>
           </li>
+          <li><Link to="/messenger" >msg</Link></li>
         </ul>
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
